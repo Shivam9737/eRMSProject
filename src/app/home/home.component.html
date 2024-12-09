@@ -1,0 +1,94 @@
+<div>
+  <h1>Home</h1>
+
+  <!-- This Week Section -->
+  <h2>This week</h2>
+  <mat-tab-group>
+    <mat-tab label="QF (12)">
+      <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+        <ng-container matColumnDef="formName">
+          <th mat-header-cell *matHeaderCellDef> QF Form Name </th>
+          <td mat-cell *matCellDef="let element"> {{ element.formName }} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="formType">
+          <th mat-header-cell *matHeaderCellDef> Form Type </th>
+          <td mat-cell *matCellDef="let element"> {{ element.formType }} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="createdBy">
+          <th mat-header-cell *matHeaderCellDef> Created By </th>
+          <td mat-cell *matCellDef="let element"> {{ element.createdBy }} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="formDate">
+          <th mat-header-cell *matHeaderCellDef> Form Date & Time </th>
+          <td mat-cell *matCellDef="let element"> {{ element.formDate }} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="status">
+          <th mat-header-cell *matHeaderCellDef> Status </th>
+          <td mat-cell *matCellDef="let element"> {{ element.status }} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="ca">
+          <th mat-header-cell *matHeaderCellDef> CA </th>
+          <td mat-cell *matCellDef="let element"> {{ element.ca }} </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      </table>
+    </mat-tab>
+    <mat-tab label="Tasks (07)">
+      <!-- Add task-related table content here if required -->
+    </mat-tab>
+  </mat-tab-group>
+
+  <!-- Spacer -->
+  <hr />
+
+  <!-- All Pending Section -->
+  <h2>All Pending</h2>
+  <mat-tab-group>
+    <mat-tab label="Open QF (24)">
+      <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+        <ng-container matColumnDef="formName">
+          <th mat-header-cell *matHeaderCellDef> QF Form Name </th>
+          <td mat-cell *matCellDef="let element"> {{ element.formName }} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="formType">
+          <th mat-header-cell *matHeaderCellDef> Form Type </th>
+          <td mat-cell *matCellDef="let element"> {{ element.formType }} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="createdBy">
+          <th mat-header-cell *matHeaderCellDef> Created By </th>
+          <td mat-cell *matCellDef="let element"> {{ element.createdBy }} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="formDate">
+          <th mat-header-cell *matHeaderCellDef> Form Date & Time </th>
+          <td mat-cell *matCellDef="let element"> {{ element.formDate }} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="status">
+          <th mat-header-cell *matHeaderCellDef> Status </th>
+          <td mat-cell *matCellDef="let element"> {{ element.status }} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="ca">
+          <th mat-header-cell *matHeaderCellDef> CA </th>
+          <td mat-cell *matCellDef="let element"> {{ element.ca }} </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      </table>
+    </mat-tab>
+    <mat-tab label="Open Tasks (13)">
+      <!-- Add task-related table content here if required -->
+    </mat-tab>
+  </mat-tab-group>
+</div>

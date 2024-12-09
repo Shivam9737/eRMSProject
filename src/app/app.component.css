@@ -1,0 +1,14 @@
+.app-container {
+    display: flex;
+  }
+  
+  .content {
+    transition: margin-left 0.3s ease;
+    margin-left: 240px;
+    flex: 1;
+  }
+  
+  .content.expanded {
+    margin-left: 60px; /* Adjust margin for collapsed sidebar */
+  }
+  
