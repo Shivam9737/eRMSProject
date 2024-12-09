@@ -7,7 +7,7 @@ import { HomeComponent } from './home/home.component';
   selector: 'app-root',
   imports: [SidebarComponent, HomeComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrl: './app.component.css'gg
 })
 export class AppComponent {
   title = 'eRMSProject';
